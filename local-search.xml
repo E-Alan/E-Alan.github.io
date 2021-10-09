@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>Typora快捷键</title>
+    <link href="/2021/10/03/Typora%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <url>/2021/10/03/Typora%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    
+    <content type="html"><![CDATA[<p><strong>技巧一</strong>：</p><p>新建 CTRL + N</p><p>保存 CTRL + S</p><p>另存为 CTRL + SHIFT + S</p><p>一级标题: CTRL + 1</p><p>二级标题: CTRL + 2</p><p>三级标题: CTRL + 3</p><p>四级标题 : CTRL + 4</p><p>五级标题 : CTRL + 5</p><p>六级标题 : CTRL +6</p><p>插入表格: CTRL + T</p><p>插入引用: CTRL + SHIFT + Q</p><p>有序列表: CTRL + SHIFT + [</p><p>无序列表: CTRL + SHIFT + ]</p><p>代码块: CTRL + SHIFT + K</p><p>字体加粗: CTRL + B</p><p>超链接: CTRL + K</p><p>插入图片: CTRL + SHIFT +l</p><p>显示/隐藏侧边栏: CTRL + SHIFT + L</p><p>打开/关闭源代码模式: CTRL + /</p><p>全文查找: CTRL + F</p><p>全文替换: CTRL + H</p><p>开发者工具: SHIFT + F12</p><p>跳转到文首: CTRL + Home</p><p>跳转到文末 : CTRL + End</p><p>注：上面跳转文首、文末 HOME键 和 End键位置：（右边上下左右键的 上方有6个键，中间2个就是Home和End键）</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Markdown</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Typora</tag>
+      
+      <tag>快捷键</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Typora使用指南</title>
     <link href="/2021/10/03/Typora%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
     <url>/2021/10/03/Typora%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
