@@ -1,0 +1,836 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Yubiao Wang">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="论文写作小记（LaTex）01.字体规范 加粗 \textbf{…} ：可用于表格、图片的标签；列表  意大利斜体 \textit{…} : 用于模型，方法，段落关键词的强调  \item \textbf&amp;#123;...&amp;#125;   小字母大写 \textsc{…} ：例如 \textsc{Task 1}  无衬线字体 \textsf{…} : 例如 4-3-3 展示   等宽字体 \tex">
+<meta property="og:type" content="article">
+<meta property="og:title" content="论文写作小记（LaTex）">
+<meta property="og:url" content="https://e-alan.github.io/2022/02/06/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%B0%8F%E8%AE%B0%EF%BC%88LaTex%EF%BC%89/index.html">
+<meta property="og:site_name" content="Blog of Alan">
+<meta property="og:description" content="论文写作小记（LaTex）01.字体规范 加粗 \textbf{…} ：可用于表格、图片的标签；列表  意大利斜体 \textit{…} : 用于模型，方法，段落关键词的强调  \item \textbf&amp;#123;...&amp;#125;   小字母大写 \textsc{…} ：例如 \textsc{Task 1}  无衬线字体 \textsf{…} : 例如 4-3-3 展示   等宽字体 \tex">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-02-06T13:35:24.000Z">
+<meta property="article:modified_time" content="2022-02-07T04:46:53.738Z">
+<meta property="article:author" content="Yubiao Wang">
+<meta property="article:tag" content="LaTex">
+<meta property="article:tag" content="论文写作">
+<meta property="article:tag" content="数模美赛">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  <title>论文写作小记（LaTex） - Blog of Alan</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"e-alan.github.io","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="论文写作小记（LaTex）"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-02-06 21:35" pubdate>
+          2022年2月6日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.4k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          28 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">论文写作小记（LaTex）</h1>
+            
+            <div class="markdown-body">
+              
+              <h1 id="论文写作小记（LaTex）"><a href="#论文写作小记（LaTex）" class="headerlink" title="论文写作小记（LaTex）"></a>论文写作小记（LaTex）</h1><h2 id="01-字体规范"><a href="#01-字体规范" class="headerlink" title="01.字体规范"></a>01.字体规范</h2><ul>
+<li><p>加粗 \textbf{…} ：可用于表格、图片的标签；列表</p>
+</li>
+<li><p>意大利斜体 \textit{…} : 用于模型，方法，段落关键词的强调</p>
+<pre><code class="hljs"> \item \textbf&#123;...&#125;
+</code></pre>
+</li>
+<li><p>小字母大写 \textsc{…} ：例如 \textsc{Task 1}</p>
+</li>
+<li><p>无衬线字体 \textsf{…} : 例如 4-3-3 展示 </p>
+</li>
+<li><p>等宽字体 \texttt{…} : 例如M2的处理</p>
+</li>
+</ul>
+<h2 id="02-间距调节"><a href="#02-间距调节" class="headerlink" title="02.间距调节"></a>02.间距调节</h2><ul>
+<li><p>强制换行：可使用\\或 \linebreak, </p>
+<p>如果在单词中间，我们不希望换行可以使用˜连接，即不会断行的空格。</p>
+</li>
+<li><p>强制分页：可用 \newpage, \clearpage 或 \pagebreak</p>
+</li>
+<li><p>空格：(数值与单位之间没有空格)</p>
+<ul>
+<li>强制空格: \␣</li>
+<li>\quad：产生一段宽度为 1em 的水平空白</li>
+<li>\qquad：\quad 的两倍</li>
+<li>,：大约为 \quad 的 3/18</li>
+</ul>
+</li>
+<li><p>垂直间距：\vspace{高度}：产生指定高度的垂直空白，如 \vspace{4pt}</p>
+</li>
+</ul>
+<h2 id="03-列表使用"><a href="#03-列表使用" class="headerlink" title="03.列表使用"></a>03.列表使用</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs latex">无序列表<br>\begin&#123;itemize&#125;<br>　　\item 标签 条目内容<br>\end&#123;itemize&#125;<br>有序列表<br>\begin&#123;enumerate&#125;[可选格式]<br>　　\item 标签 条目内容<br>\end&#123;enumerate&#125;<br>eg.<br>\begin&#123;enumerate&#125;[\bfseries \textit&#123;Step&#125; 1:]<br>	\item AAA<br>	\item BBB<br>	\item CCC<br>\end&#123;enumerate&#125;<br></code></pre></td></tr></table></figure>
+
+<h2 id="04-交叉引用"><a href="#04-交叉引用" class="headerlink" title="04.交叉引用"></a>04.交叉引用</h2><ul>
+<li><p>章节、公式、图表、定理等位置使用\label 命令之后在别处使用\ref 或\pageref 命令，生成交叉引用的编号和页码</p>
+</li>
+<li><p>数模论文中，一般交叉引用主要出现的有以下几种情况：</p>
+<ul>
+<li><p>图表的交叉引用：在图表标题命令\caption 之后紧接着使用。</p>
+</li>
+<li><p>章节的交叉引用：在章节标题命令\section 等之后紧接着使用。</p>
+</li>
+<li><p>公式的交叉引用:  </p>
+<ol>
+<li><p>标签\label：单行公式在公式内任意位置使用；多行公式在每一行</p>
+<p>公式的任意位置使用。</p>
+</li>
+<li><p>引用\eqref：amsmath 的\eqref 命令能够为引用自动加上圆括号。</p>
+</li>
+</ol>
+</li>
+<li><p>参考文献的引用：</p>
+<ul>
+<li><p>在前面我们使用\bibitem 定义时，后面 {} 中的内容便自动生</p>
+<p>成标签，供我们引用。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs latex">\bibitem&#123;1&#125; Leighton, F. Thomson. \emph&#123;Introduction to parallel algorithms and architectures: array, trees, hypercubes&#125;. 2014.<br></code></pre></td></tr></table></figure>
+
+
+
+<p>在引用处，只需要使用\upcite{标签号} 即可引用。</p>
+</li>
+<li><p>\url：生成网址的同时在页面上输出其内容</p>
+<p>\href：生成网址的同时在页面上输出文本的内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs latex">\url&#123;网址&#125;<br>\href&#123;网址&#125;&#123;文本&#125;<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="05-公式微调"><a href="#05-公式微调" class="headerlink" title="05.公式微调"></a>05.公式微调</h2><ul>
+<li><p>在行内公式中，巨算符 (∑, ∏, ∫ ) 的上下标往往会被放置到右侧，同时分数（fraction）也会变小</p>
+<ul>
+<li><p>利用巨算符、分数本身的缩放 (优雅)</p>
+<ul>
+<li>巨算符：\limits(上下方)，\nolimits(右方)</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs latex">$\sum\limits_&#123;i=1&#125;^n$<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>分数：\dfrac(正常)，\tfrac(缩小版)</li>
+</ul>
+</li>
+<li><p>使用万能的\displaystyle 命令 (快捷)</p>
+<ul>
+<li>在行内公式出现前使用\displaystyle命令 (不带参数)，即可将行内公式完全转化为行间公式 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>多行公式</p>
+<ul>
+<li>利用 align 环境使两个符号处对齐</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs latex">\begin&#123;align&#125;<br>	a &amp; = b + c \\<br>	  &amp; = d + e<br>\end&#123;align&#125;	  <br></code></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>利用 gather 环境进行公式的居中对齐; 如果我们不需要按等号对齐，只需罗列数个公式，gather 将是一个很好用的环境：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs latex">\begin&#123;gather&#125;<br>a = b + c \\<br>d = e + f + g \\<br>h + i = j + k \notag \\<br>%不标号<br>l + m = n<br>\end&#123;gather&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><p>加 * 后缀，即 align* 和 gather* 环境，</p>
+<pre><code class="hljs">    同样已经囊括数学环境，但是他不会对公式进行编号。
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="06-图表处理"><a href="#06-图表处理" class="headerlink" title="06.图表处理"></a>06.图表处理</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs latex">\begin&#123;figure&#125;[htbp]<br>　　\centering<br>　　\includegraphics[选项]&#123;图形文件名 (相对位置且含后缀)&#125;<br>　　\caption&#123;图片标题&#125;<br>　　\label&#123;图片标签&#125;<br>\end&#123;figure&#125;<br><br>%eg.<br>\begin &#123; figure &#125;[ htbp ]<br>\centering<br>\includegraphics [ width =.9\ textwidth ]&#123; XXX . pdf &#125; % 图片相对位置 <br>\caption &#123; Electric Vehicles : January 2020&#125; % 图 片 标 题 5 <br>\label &#123; fig : American &#125; % 图 片 标 签 6 <br>\end &#123; figure &#125;<br><br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>常用 [选项] 有:<ul>
+<li>width, height <em>→</em> 指定图形的宽度和高度</li>
+<li>scale <em>→</em> 缩放因子, 如 scale=0.8</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs latex">% eg.<br>\includegraphics[scale=0.2]&#123;tiger.png&#125;<br>\includegraphics[width=2.5cm]&#123;tiger.png&#125;<br>\includegraphics[width=0.3\textwidth]&#123;tiger.png&#125;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><p>格式选择：</p>
+<ul>
+<li><p>eps：eps 是一种传统的矢量图，一般期刊在接受稿件时，要求将所</p>
+<p>有图片都转化成 eps。eps 主要的获取途径为MATLAB直接导出。利</p>
+<p>用 pdfLATEX 需要转化成 pdf 编译。</p>
+</li>
+<li><p>pdf：pdf 也是一种很好的矢量图格式，因为它的获取来源非常广。</p>
+<p>一般软件都具备打印功能，利用虚拟打印机即可获得清晰的 pdf 文</p>
+<p>件，但美中不足的是，打印的图片可能需要裁剪白边。</p>
+</li>
+</ul>
+</li>
+<li><p>多图模式</p>
+<ul>
+<li><p>子图格式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs latex">\begin &#123; figure &#125;[ htbp ]<br>	\centering<br>	\subfigure [ Hot Map of one Room ]&#123; % 图 片 1([] 内 为 子 图 标 题) <br>	\label &#123; fig : sub . roomhot &#125; % 子 图 1 的 标 签  <br>	\includegraphics [ width =0.45\ textwidth ]&#123; XXX . jpg &#125;&#125;% 子图1位置  <br>	\subfigure [ Hot Map of one Floor ]&#123; % 图 片 2  <br>	\label &#123; fig : sub . floorhot &#125; % 子 图 2 的 标 签  <br>	\includegraphics [ width =0.45\ textwidth ]&#123; XXX . jpg &#125;&#125;% 子 图 2 位 置 <br>	\caption &#123; Hot Map of one Room and one Floor &#125; % 总 图 标 题<br>	\label &#123; fig : hot &#125; % 总 图 标 签<br>\end &#123; figure &#125;<br>%一般几张图片的宽度和&lt; 1\textwidth<br></code></pre></td></tr></table></figure></li>
+<li><p>更多多图格式：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1tA411t7U9?from=search&seid=16113954067034039980&spm_id_from=333.337.0.0">b站多图排版</a></p>
+</li>
+</ul>
+</li>
+<li><p>表格操作</p>
+<ul>
+<li><p>\hline: 与表格同宽的水平线</p>
+</li>
+<li><p>\cline{m-n}: 从第 <em>m</em> 列开始到第 <em>n</em> 列结束的水平线</p>
+</li>
+<li><p>使用 booktabs 宏包的三线表</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs latex">顶端的\toprule<br>标题行和内容间的\midrule<br>表格结束的\bottomrule		<br></code></pre></td></tr></table></figure></li>
+<li><p>在 LaTeX 中横向合并单元格较为容易，直接使用 \multicolumn{列数}{对齐方式}{内容} 即可。</p>
+</li>
+<li><p>而纵向合并单元格则需要用到 multirow 宏包，然后采用 \multirow{列数}{宽度}{内容}。这两个语句仅在第二个命令有所区别。在\multirow中的宽度可以填*以使用自然宽度。</p>
+</li>
+<li><p>在普通表格中一般采用\cline{i-j}实现，而在三线表中则利用\cmidrule{i-j}实现</p>
+</li>
+</ul>
+<p>​    </p>
+</li>
+</ul>
+
+              
+            </div>
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/LaTex/" class="category-chain-item">LaTex</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/LaTex/">#LaTex</a>
+      
+        <a href="/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/">#论文写作</a>
+      
+        <a href="/tags/%E6%95%B0%E6%A8%A1%E7%BE%8E%E8%B5%9B/">#数模美赛</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>论文写作小记（LaTex）</div>
+      <div>https://e-alan.github.io/2022/02/06/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%B0%8F%E8%AE%B0%EF%BC%88LaTex%EF%BC%89/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Yubiao Wang</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年2月6日</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>许可协议</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/02/09/Excel%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" title="Excel使用技巧">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Excel使用技巧</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/10/03/Typora%E5%BF%AB%E6%8D%B7%E9%94%AE/" title="Typora快捷键">
+                        <span class="hidden-mobile">Typora快捷键</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.0/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script>
+  (function() {
+    var enableLang = CONFIG.code_language.enable && CONFIG.code_language.default;
+    var enableCopy = CONFIG.copy_btn;
+    if (!enableLang && !enableCopy) {
+      return;
+    }
+
+    function getBgClass(ele) {
+      return Fluid.utils.getBackgroundLightness(ele) >= 0 ? 'code-widget-light' : 'code-widget-dark';
+    }
+
+    var copyTmpl = '';
+    copyTmpl += '<div class="code-widget">';
+    copyTmpl += 'LANG';
+    copyTmpl += '</div>';
+    jQuery('.markdown-body pre').each(function() {
+      var $pre = jQuery(this);
+      if ($pre.find('code.mermaid').length > 0) {
+        return;
+      }
+      if ($pre.find('span.line').length > 0) {
+        return;
+      }
+
+      var lang = '';
+
+      if (enableLang) {
+        lang = CONFIG.code_language.default;
+        if ($pre[0].children.length > 0 && $pre[0].children[0].classList.length >= 2 && $pre.children().hasClass('hljs')) {
+          lang = $pre[0].children[0].classList[1];
+        } else if ($pre[0].getAttribute('data-language')) {
+          lang = $pre[0].getAttribute('data-language');
+        } else if ($pre.parent().hasClass('sourceCode') && $pre[0].children.length > 0 && $pre[0].children[0].classList.length >= 2) {
+          lang = $pre[0].children[0].classList[1];
+          $pre.parent().addClass('code-wrapper');
+        } else if ($pre.parent().hasClass('markdown-body') && $pre[0].classList.length === 0) {
+          $pre.wrap('<div class="code-wrapper"></div>');
+        }
+        lang = lang.toUpperCase().replace('NONE', CONFIG.code_language.default);
+      }
+      $pre.append(copyTmpl.replace('LANG', lang).replace('code-widget">',
+        getBgClass($pre[0]) + (enableCopy ? ' code-widget copy-btn" data-clipboard-snippet><i class="iconfont icon-copy"></i>' : ' code-widget">')));
+
+      if (enableCopy) {
+        Fluid.utils.createScript('https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js', function() {
+          var clipboard = new window.ClipboardJS('.copy-btn', {
+            target: function(trigger) {
+              var nodes = trigger.parentNode.childNodes;
+              for (var i = 0; i < nodes.length; i++) {
+                if (nodes[i].tagName === 'CODE') {
+                  return nodes[i];
+                }
+              }
+            }
+          });
+          clipboard.on('success', function(e) {
+            e.clearSelection();
+            e.trigger.innerHTML = e.trigger.innerHTML.replace('icon-copy', 'icon-success');
+            setTimeout(function() {
+              e.trigger.innerHTML = e.trigger.innerHTML.replace('icon-success', 'icon-copy');
+            }, 2000);
+          });
+        });
+      }
+    });
+  })();
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
