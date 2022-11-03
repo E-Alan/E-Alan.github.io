@@ -16,39 +16,25 @@
   <meta name="author" content="Yubiao Wang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Titanic 生存率预测20069100069王宇彪     2022.10.30一、问题描述泰坦尼克号（Titanic）问题的背景就是那个大家都熟悉的『Jack and Rose』的故事，豪华游艇倒了，大家都惊恐逃生，可是救生艇的数量有限，无法人人都有，副船长发话了『lady and kid first！』，所以是否获救其实并非随机，而是基于一些背景而有rank先后的。训练和测试数据是一些乘客">
+    <meta name="description" content="Titanic 生存率预测一、问题描述泰坦尼克号（Titanic）问题的背景就是那个大家都熟悉的『Jack and Rose』的故事，豪华游艇倒了，大家都惊恐逃生，可是救生艇的数量有限，无法人人都有，副船长发话了『lady and kid first！』，所以是否获救其实并非随机，而是基于一些背景而有rank先后的。训练和测试数据是一些乘客的个人信息以及存活状况，要尝试根据它生成合适的模型并预测其">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Blog of Alan">
-<meta property="og:url" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/index.html">
+<meta property="og:title" content="kaggle Titanic问题(集成学习)">
+<meta property="og:url" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic%E9%97%AE%E9%A2%98(%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0)/index.html">
 <meta property="og:site_name" content="Blog of Alan">
-<meta property="og:description" content="Titanic 生存率预测20069100069王宇彪     2022.10.30一、问题描述泰坦尼克号（Titanic）问题的背景就是那个大家都熟悉的『Jack and Rose』的故事，豪华游艇倒了，大家都惊恐逃生，可是救生艇的数量有限，无法人人都有，副船长发话了『lady and kid first！』，所以是否获救其实并非随机，而是基于一些背景而有rank先后的。训练和测试数据是一些乘客">
+<meta property="og:description" content="Titanic 生存率预测一、问题描述泰坦尼克号（Titanic）问题的背景就是那个大家都熟悉的『Jack and Rose』的故事，豪华游艇倒了，大家都惊恐逃生，可是救生艇的数量有限，无法人人都有，副船长发话了『lady and kid first！』，所以是否获救其实并非随机，而是基于一些背景而有rank先后的。训练和测试数据是一些乘客的个人信息以及存活状况，要尝试根据它生成合适的模型并预测其">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_11_1.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_14_1.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_17_1.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_22_1.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_25_1.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_28_1.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_29_1.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_33_1.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_49_1.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_71_0.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_74_1.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_74_2.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_74_3.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_74_4.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_74_5.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_74_6.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_74_7.png">
-<meta property="og:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_74_8.png">
-<meta property="article:published_time" content="2022-11-03T09:37:11.476Z">
-<meta property="article:modified_time" content="2022-11-03T09:16:24.250Z">
+<meta property="og:image" content="https://e-alan.github.io/img/kaggle.jpg">
+<meta property="article:published_time" content="2022-11-03T09:35:10.000Z">
+<meta property="article:modified_time" content="2022-11-03T09:55:26.729Z">
 <meta property="article:author" content="Yubiao Wang">
+<meta property="article:tag" content="集成学习">
+<meta property="article:tag" content="Titanic">
+<meta property="article:tag" content="Kaggle">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://e-alan.github.io/2022/11/03/kaggle%20Titanic/output_11_1.png">
+<meta name="twitter:image" content="https://e-alan.github.io/img/kaggle.jpg">
   
   
-  <title>Blog of Alan</title>
+  <title>kaggle Titanic问题(集成学习) - Blog of Alan</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -217,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="kaggle Titanic问题(集成学习)"></span>
           
         </div>
 
@@ -228,7 +214,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-03 17:37" pubdate>
+        <time datetime="2022-11-03 17:35" pubdate>
           2022年11月3日 下午
         </time>
       </span>
@@ -289,11 +275,11 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none"></h1>
+            <h1 style="display: none">kaggle Titanic问题(集成学习)</h1>
             
             <div class="markdown-body">
               
-              <h1 id="Titanic-生存率预测"><a href="#Titanic-生存率预测" class="headerlink" title="Titanic 生存率预测"></a>Titanic 生存率预测</h1><h3 id="20069100069王宇彪-2022-10-30"><a href="#20069100069王宇彪-2022-10-30" class="headerlink" title="20069100069王宇彪     2022.10.30"></a>20069100069王宇彪     2022.10.30</h3><h3 id="一、问题描述"><a href="#一、问题描述" class="headerlink" title="一、问题描述"></a>一、问题描述</h3><p>泰坦尼克号（Titanic）问题的背景就是那个大家都熟悉的『Jack and Rose』的故事，豪华游艇倒了，大家都惊恐逃生，可是救生艇的数量有限，无法人人都有，副船长发话了『lady and kid first！』，所以是否获救其实并非随机，而是基于一些背景而有rank先后的。训练和测试数据是一些乘客的个人信息以及存活状况，要尝试根据它生成合适的模型并预测其他人（test.data中的新数据）的存活状况，模型最终结果保存在predictedData.csv中。</p>
+              <h1 id="Titanic-生存率预测"><a href="#Titanic-生存率预测" class="headerlink" title="Titanic 生存率预测"></a>Titanic 生存率预测</h1><h3 id="一、问题描述"><a href="#一、问题描述" class="headerlink" title="一、问题描述"></a>一、问题描述</h3><p>泰坦尼克号（Titanic）问题的背景就是那个大家都熟悉的『Jack and Rose』的故事，豪华游艇倒了，大家都惊恐逃生，可是救生艇的数量有限，无法人人都有，副船长发话了『lady and kid first！』，所以是否获救其实并非随机，而是基于一些背景而有rank先后的。训练和测试数据是一些乘客的个人信息以及存活状况，要尝试根据它生成合适的模型并预测其他人（test.data中的新数据）的存活状况，模型最终结果保存在predictedData.csv中。</p>
 <p>显然，这是一个二分类问题，我们学习使用集成学习方法进行建模求解。<br>数据集下载地址：kaggle官网 <a target="_blank" rel="noopener" href="https://www.kaggle.com/competitions/titanic/data">https://www.kaggle.com/competitions/titanic/data</a></p>
 <h3 id="开始加油！"><a href="#开始加油！" class="headerlink" title="开始加油！"></a>开始加油！</h3><p>(ง •̀_•́)ง (*•̀ㅂ•́)و</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#数据处理</span><br><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd<br><span class="hljs-comment">#import os</span><br><span class="hljs-comment">#绘图</span><br><span class="hljs-keyword">import</span> seaborn <span class="hljs-keyword">as</span> sns<br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br>%matplotlib inline<br><span class="hljs-comment"># matplotlib支持中文</span><br>plt.rcParams[<span class="hljs-string">&#x27;font.sans-serif&#x27;</span>] = [<span class="hljs-string">&#x27;SimHei&#x27;</span>]  <span class="hljs-comment"># 用来正常显示中文标签</span><br>plt.rcParams[<span class="hljs-string">&#x27;axes.unicode_minus&#x27;</span>] = <span class="hljs-literal">False</span>  <span class="hljs-comment"># 用来正常显示负号</span><br><br><span class="hljs-comment">#各种模型、数据处理方法</span><br><span class="hljs-keyword">from</span> sklearn.preprocessing <span class="hljs-keyword">import</span> LabelEncoder <span class="hljs-comment"># 对数据进行编码</span><br><span class="hljs-keyword">from</span> sklearn.model_selection <span class="hljs-keyword">import</span> train_test_split <br><span class="hljs-keyword">from</span> sklearn.linear_model <span class="hljs-keyword">import</span> LogisticRegression<br><span class="hljs-keyword">from</span> sklearn.svm <span class="hljs-keyword">import</span> SVC, LinearSVC <span class="hljs-comment">#支持向量机用于分类</span><br><span class="hljs-keyword">from</span> sklearn.ensemble <span class="hljs-keyword">import</span> RandomForestClassifier<br><span class="hljs-keyword">from</span> sklearn.neighbors <span class="hljs-keyword">import</span> KNeighborsClassifier<br><span class="hljs-keyword">from</span> sklearn.naive_bayes <span class="hljs-keyword">import</span> GaussianNB<br><span class="hljs-keyword">from</span> sklearn.linear_model <span class="hljs-keyword">import</span> Perceptron <span class="hljs-comment">#感知机</span><br><span class="hljs-keyword">from</span> sklearn.linear_model <span class="hljs-keyword">import</span> SGDClassifier <span class="hljs-comment">#随机梯度下降分类</span><br><span class="hljs-keyword">from</span> sklearn.tree <span class="hljs-keyword">import</span> DecisionTreeClassifier<br><span class="hljs-keyword">from</span> sklearn.ensemble <span class="hljs-keyword">import</span> GradientBoostingClassifier<br><span class="hljs-keyword">from</span> xgboost <span class="hljs-keyword">import</span> XGBClassifier <br><span class="hljs-keyword">from</span> lightgbm <span class="hljs-keyword">import</span> LGBMClassifier<br><span class="hljs-keyword">from</span> sklearn.model_selection <span class="hljs-keyword">import</span> GridSearchCV, cross_val_score, StratifiedKFold, learning_curve<br><span class="hljs-keyword">from</span> sklearn.metrics <span class="hljs-keyword">import</span> precision_score <span class="hljs-comment"># 精度是比率tp /（tp + fp）</span><br><br><span class="hljs-keyword">import</span> warnings<br>warnings.filterwarnings(<span class="hljs-string">&#x27;ignore&#x27;</span>)<br></code></pre></td></tr></table></figure>
@@ -312,6 +298,7 @@
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
+
 
 <pre><code class="hljs">.dataframe tbody tr th &#123;
     vertical-align: top;
@@ -418,6 +405,7 @@
     </tr>
   </tbody>
 </table>
+
 </div>
 
 
@@ -456,6 +444,7 @@ memory usage: 83.7+ KB
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
+
 
 <pre><code class="hljs">.dataframe tbody tr th &#123;
     vertical-align: top;
@@ -562,6 +551,7 @@ memory usage: 83.7+ KB
     </tr>
   </tbody>
 </table>
+
 </div>
 
 
@@ -575,7 +565,7 @@ memory usage: 83.7+ KB
 
 <pre><code class="hljs">Text(0.5, 1.0, &#39;train feature corr&#39;)
 </code></pre>
-<p>​<br><img src="output_11_1.png" srcset="/img/loading.gif" lazyload alt="png"><br>​    </p>
+<p><img src="/img/output_11_1.png" srcset="/img/loading.gif" lazyload><br>​    </p>
 <p>根据相关系数矩阵，我们初步分析可知：</p>
 <ol>
 <li>Fare（乘客费用）、Parch（同行的家长和孩子数目）与“Survived”正相关。<br>数据显示高费用顾客更可能获救；</li>
@@ -589,7 +579,7 @@ memory usage: 83.7+ KB
 
 <pre><code class="hljs">&lt;matplotlib.legend.Legend at 0x24b9bfaffd0&gt;
 </code></pre>
-<p>​<br><img src="output_14_1.png" srcset="/img/loading.gif" lazyload alt="png"><br>​    </p>
+<p><img src="/img/output_14_1.png" srcset="/img/loading.gif" lazyload></p>
 <p>乘客的年龄集中在20-40岁，所以主要为青年人和中年人。从age survived distribution表中我们可以发现，小孩获救似乎更容易一些，这个结果也有一定的社会基础，灾难时刻，大多数人可能选择站出来保护妇女和儿童。</p>
 <h4 id="4-2-用户阶级（Pclass）"><a href="#4-2-用户阶级（Pclass）" class="headerlink" title="4.2 用户阶级（Pclass）"></a>4.2 用户阶级（Pclass）</h4><p>我们绘制柱形图展示不同Pclass（1， 2 ， 3）的乘客获救与未获救的数量，以对比发现Pclass与“Survived”的关系。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python">y_dead = train_df[train_df.Survived==<span class="hljs-number">0</span>].groupby(<span class="hljs-string">&#x27;Pclass&#x27;</span>)[<span class="hljs-string">&#x27;Survived&#x27;</span>].count()<br>y_alive = train_df[train_df.Survived==<span class="hljs-number">1</span>].groupby(<span class="hljs-string">&#x27;Pclass&#x27;</span>)[<span class="hljs-string">&#x27;Survived&#x27;</span>].count()<br><br>pos = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]<br>ax = plt.figure(figsize=(<span class="hljs-number">8</span>,<span class="hljs-number">4</span>)).add_subplot(<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>)<br>ax.bar(pos, y_dead, color=<span class="hljs-string">&#x27;r&#x27;</span>, alpha=<span class="hljs-number">0.5</span>, label=<span class="hljs-string">&#x27;dead&#x27;</span>)<br>ax.bar(pos, y_alive, color=<span class="hljs-string">&#x27;b&#x27;</span>, bottom=y_dead, alpha=<span class="hljs-number">0.5</span>, label=<span class="hljs-string">&#x27;alive&#x27;</span>)<br>ax.legend(fontsize=<span class="hljs-number">15</span>, loc=<span class="hljs-string">&#x27;best&#x27;</span>)<br>ax.set_xticks(pos)<br>ax.set_xticklabels([<span class="hljs-string">&#x27;Pclass %d&#x27;</span>%(i) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,<span class="hljs-number">4</span>)], size=<span class="hljs-number">12</span>)<br>ax.set_title(<span class="hljs-string">&#x27;Pclass Surveved count&#x27;</span>, size=<span class="hljs-number">15</span>)<br></code></pre></td></tr></table></figure>
@@ -599,7 +589,7 @@ memory usage: 83.7+ KB
 
 <pre><code class="hljs">Text(0.5, 1.0, &#39;Pclass Surveved count&#39;)
 </code></pre>
-<p>​<br><img src="output_17_1.png" srcset="/img/loading.gif" lazyload alt="png"><br>​    </p>
+<p><img src="/img/output_17_1.png" srcset="/img/loading.gif" lazyload></p>
 <p>Pclass从1至3等级递减，即1可以理解为头等乘客。我们发现在Pclass=1的记录中，乘客的获救比例明显最高，这是一个有趣的现象。或许更高等的乘客配备了更好的保护措施。</p>
 <h4 id="4-3-性别（Sex）"><a href="#4-3-性别（Sex）" class="headerlink" title="4.3 性别（Sex）"></a>4.3 性别（Sex）</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 统计性别和获救的数量</span><br><br><span class="hljs-built_in">print</span>(train_df.Sex.value_counts())<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;-------------------------------&#x27;</span>)<br><span class="hljs-built_in">print</span>(train_df.groupby(<span class="hljs-string">&#x27;Sex&#x27;</span>)[<span class="hljs-string">&#x27;Survived&#x27;</span>].mean())<br></code></pre></td></tr></table></figure>
 
@@ -620,7 +610,7 @@ Name: Survived, dtype: float64
 
 <pre><code class="hljs">&lt;matplotlib.legend.Legend at 0x24b9e256f40&gt;
 </code></pre>
-<p>​<br><img src="output_22_1.png" srcset="/img/loading.gif" lazyload alt="png"><br>​    </p>
+<p><img src="/img/output_22_1.png" srcset="/img/loading.gif" lazyload></p>
 <p>图例中0表示’Survived’=0，即未获救；图表具有多个维度，可以反映不同性别以及是否获救的乘客的大致分布情况。<br>分析结果显示，无论男女中青年容易获救；相比于女性，男性老年和小孩的获救比例更大。</p>
 <h4 id="4-4-Frae-票价"><a href="#4-4-Frae-票价" class="headerlink" title="4.4 Frae(票价)"></a>4.4 Frae(票价)</h4><p>我们分别绘制票价的总体分布图和dead和alive类型的票价分布对比图</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 票价的总体分布图</span><br>fig = plt.figure(figsize=(<span class="hljs-number">8</span>, <span class="hljs-number">6</span>))<br>ax = plt.subplot2grid((<span class="hljs-number">2</span>,<span class="hljs-number">2</span>), (<span class="hljs-number">0</span>,<span class="hljs-number">0</span>), colspan=<span class="hljs-number">2</span>)<br><br>ax.tick_params(labelsize=<span class="hljs-number">10</span>)<br>ax.set_title(<span class="hljs-string">&#x27;Fare dist&#x27;</span>, size=<span class="hljs-number">13</span>)<br>sns.kdeplot(train_df.Fare, ax=ax)<br>sns.distplot(train_df.Fare,label=<span class="hljs-string">&#x27;fare&#x27;</span>, ax=ax)<br>ax.legend(fontsize=<span class="hljs-number">15</span>)<br>pos = <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">201</span>,<span class="hljs-number">25</span>)<br>ax.set_xticks(pos)<br>ax.set_xlim([<span class="hljs-number">0</span>, <span class="hljs-number">200</span>])<br>ax.set_xlabel(<span class="hljs-string">&#x27;&#x27;</span>)<br>ax.set_ylabel(<span class="hljs-string">&#x27;&#x27;</span>)<br><br><span class="hljs-comment"># dead和alive分别统计的票价分布曲线对比图</span><br>ax1 = plt.subplot2grid((<span class="hljs-number">2</span>,<span class="hljs-number">2</span>), (<span class="hljs-number">1</span>,<span class="hljs-number">0</span>), colspan=<span class="hljs-number">2</span>)<br>ax1.tick_params(labelsize=<span class="hljs-number">10</span>)<br>sns.distplot(train_df[train_df.Survived==<span class="hljs-number">0</span>].Fare, ax=ax1,hist=<span class="hljs-literal">False</span>, label=<span class="hljs-string">&#x27;dead&#x27;</span>, color=<span class="hljs-string">&#x27;r&#x27;</span>)<br>sns.distplot(train_df[train_df.Survived==<span class="hljs-number">1</span>].Fare, ax=ax1,hist=<span class="hljs-literal">False</span>, label=<span class="hljs-string">&#x27;alive&#x27;</span>,  color=<span class="hljs-string">&#x27;b&#x27;</span>)<br>ax1.set_xlim([<span class="hljs-number">0</span>,<span class="hljs-number">200</span>])<br>ax1.legend(fontsize=<span class="hljs-number">12</span>)<br><br>ax1.set_xlabel(<span class="hljs-string">&#x27;Fare&#x27;</span>, size=<span class="hljs-number">12</span>)<br>ax1.set_ylabel(<span class="hljs-string">&#x27;&#x27;</span>)<br></code></pre></td></tr></table></figure>
@@ -630,7 +620,7 @@ Name: Survived, dtype: float64
 
 <pre><code class="hljs">Text(0, 0.5, &#39;&#39;)
 </code></pre>
-<p>​<br><img src="output_25_1.png" srcset="/img/loading.gif" lazyload alt="png"><br>​    </p>
+<p><img src="/img/output_25_1.png" srcset="/img/loading.gif" lazyload></p>
 <p>图中可以看到，低票价（Fare）的乘客中死亡比例极高，而高票价的乘客中获救的人似乎要更多。<br>同时我们注意到，Fare的分布太宽，后续数据处理可以做一下scaling，加速模型收敛。</p>
 <h4 id="4-5-表亲和直亲-SibSp和Parch"><a href="#4-5-表亲和直亲-SibSp和Parch" class="headerlink" title="4.5 表亲和直亲(SibSp和Parch)"></a>4.5 表亲和直亲(SibSp和Parch)</h4><p>SibSp描述了泰坦尼克号上与乘客同行的兄弟姐妹（Siblings）和配偶（Spouse）数目；<br>而Parch描述了泰坦尼克号上与乘客同行的家长（Parents）和孩子（Children）数目。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 首先查看数据分布特征</span><br>fig = plt.figure(figsize=(<span class="hljs-number">8</span>, <span class="hljs-number">5</span>))<br>ax1 = fig.add_subplot(<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>)<br>sns.countplot(train_df.SibSp)<br>ax1.set_title(<span class="hljs-string">&#x27;SibSp&#x27;</span>, size=<span class="hljs-number">13</span>)<br>ax1.set_xlabel(<span class="hljs-string">&#x27;&#x27;</span>)<br>ax1.set_ylabel(<span class="hljs-string">&#x27;Count&#x27;</span>,size=<span class="hljs-number">11</span>)<br><br>ax2 = fig.add_subplot(<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, sharex=ax1)<br>sns.countplot(train_df.Parch)<br>ax2.set_xlabel(<span class="hljs-string">&#x27;Parch&#x27;</span>, size=<span class="hljs-number">13</span>)<br>ax2.set_ylabel(<span class="hljs-string">&#x27;Count&#x27;</span>,size=<span class="hljs-number">11</span>)<br></code></pre></td></tr></table></figure>
@@ -640,7 +630,7 @@ Name: Survived, dtype: float64
 
 <pre><code class="hljs">Text(0, 0.5, &#39;Count&#39;)
 </code></pre>
-<p>​<br><img src="output_28_1.png" srcset="/img/loading.gif" lazyload alt="png"><br>​    </p>
+<p><img src="/img/output_28_1.png" srcset="/img/loading.gif" lazyload></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 统计对比不同sibsp &amp; parch情况下的获救比例</span><br><br>fig = plt.figure(figsize=(<span class="hljs-number">8</span>,<span class="hljs-number">6</span>))<br>ax1 = fig.add_subplot(<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>)<br>train_df.groupby(<span class="hljs-string">&#x27;SibSp&#x27;</span>)[<span class="hljs-string">&#x27;Survived&#x27;</span>].mean().plot(kind=<span class="hljs-string">&#x27;bar&#x27;</span>,ax= ax1,color=<span class="hljs-string">&#x27;lightseagreen&#x27;</span>)<br>ax1.set_title(<span class="hljs-string">&#x27;Sibsp Survived Rate&#x27;</span>, size=<span class="hljs-number">12</span>)<br>ax1.set_xlabel(<span class="hljs-string">&#x27;&#x27;</span>)<br><br>ax2 = fig.add_subplot(<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)<br>train_df.groupby(<span class="hljs-string">&#x27;Parch&#x27;</span>)[<span class="hljs-string">&#x27;Survived&#x27;</span>].mean().plot(kind=<span class="hljs-string">&#x27;bar&#x27;</span>,ax= ax2,color=<span class="hljs-string">&#x27;m&#x27;</span>)<br>ax2.set_title(<span class="hljs-string">&#x27;Parch Survived Rate&#x27;</span>, size=<span class="hljs-number">12</span>)<br>ax2.set_xlabel(<span class="hljs-string">&#x27;&#x27;</span>)<br></code></pre></td></tr></table></figure>
 
 
@@ -648,7 +638,7 @@ Name: Survived, dtype: float64
 
 <pre><code class="hljs">Text(0.5, 0, &#39;&#39;)
 </code></pre>
-<p>​<br><img src="output_29_1.png" srcset="/img/loading.gif" lazyload alt="png"><br>​    </p>
+<p><img src="/img/output_29_1.png" srcset="/img/loading.gif" lazyload></p>
 <p>分组统计不同亲戚类型,即表亲和直亲(SibSp和Parch)和数量的获救率。我们发现，获救率与亲戚的关系可能并不具有简单的线性关系。</p>
 <h3 id="五、特征工程"><a href="#五、特征工程" class="headerlink" title="五、特征工程"></a>五、特征工程</h3><h4 id="5-1-Name特征处理"><a href="#5-1-Name特征处理" class="headerlink" title="5.1 Name特征处理"></a>5.1 Name特征处理</h4><p>充分挖掘和提取Titanic数据集的特征可以有效提高模型精度。因此，我们对name字段进行挖掘和特征的提取</p>
 <h4 id="5-2-Name-Len特征"><a href="#5-2-Name-Len特征" class="headerlink" title="5.2 Name_Len特征"></a>5.2 Name_Len特征</h4><p>由于西方人的名字长度差别较大，且含义丰富，我们首先探索一下名字长度这个特征：</p>
@@ -659,7 +649,7 @@ Name: Survived, dtype: float64
 
 <pre><code class="hljs">Text(0, 0.5, &#39;Survived rate&#39;)
 </code></pre>
-<p>​<br><img src="output_33_1.png" srcset="/img/loading.gif" lazyload alt="png"><br>​    </p>
+<p><img src="/img/output_33_1.png" srcset="/img/loading.gif" lazyload></p>
 <p>可以看到名字的长度和获救率还是有一定的正向关系的，可以考虑加入Name_Len特征：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 加入Name_Len特征</span><br>combine_df[<span class="hljs-string">&#x27;Name_Len&#x27;</span>] = combine_df[<span class="hljs-string">&#x27;Name&#x27;</span>].apply(<span class="hljs-keyword">lambda</span> x: <span class="hljs-built_in">len</span>(x))<br><br><span class="hljs-comment"># Name_Len数据分箱</span><br>combine_df[<span class="hljs-string">&#x27;Name_Len&#x27;</span>] = pd.qcut(combine_df[<span class="hljs-string">&#x27;Name_Len&#x27;</span>],<span class="hljs-number">5</span>)<br></code></pre></td></tr></table></figure>
 
@@ -719,7 +709,7 @@ Name: Survived, dtype: float64
 
 <pre><code class="hljs">Text(0.5, 1.0, &#39;Embarked Age Dist &#39;)
 </code></pre>
-<p>​<br><img src="output_49_1.png" srcset="/img/loading.gif" lazyload alt="png"><br>​    </p>
+<p><img src="/img/output_49_1.png" srcset="/img/loading.gif" lazyload></p>
 <p>Embarked字段只有个别缺失，我们选择数量最多且年龄分布正常的港口进行填充</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 缺失港口信息填充S，并转换为哑变量</span><br><br>combine_df.Embarked = combine_df.Embarked.fillna(<span class="hljs-string">&#x27;S&#x27;</span>)<br>df = pd.get_dummies(combine_df[<span class="hljs-string">&#x27;Embarked&#x27;</span>],prefix=<span class="hljs-string">&#x27;Embarked&#x27;</span>)<br>combine_df = pd.concat([combine_df,df],axis=<span class="hljs-number">1</span>).drop(<span class="hljs-string">&#x27;Embarked&#x27;</span>,axis=<span class="hljs-number">1</span>)<br></code></pre></td></tr></table></figure>
 
@@ -764,6 +754,7 @@ Name: Survived, dtype: float64
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
+
 
 <pre><code class="hljs">.dataframe tbody tr th &#123;
     vertical-align: top;
@@ -1069,6 +1060,7 @@ Name: Survived, dtype: float64
   </tbody>
 </table>
 <p>1309 rows × 26 columns</p>
+
 </div>
 
 
@@ -1101,7 +1093,7 @@ Name: Survived, dtype: float64
 <h4 id="6-4-K折交叉验证"><a href="#6-4-K折交叉验证" class="headerlink" title="6.4 K折交叉验证"></a>6.4 K折交叉验证</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># K折交叉验证</span><br><br>kfold = <span class="hljs-number">10</span><br>cv_results = []<br><span class="hljs-keyword">for</span> classifier <span class="hljs-keyword">in</span> clfs :<br>    cv_results.append(cross_val_score(classifier, X_all.values, y = Y_all.values, scoring = <span class="hljs-string">&quot;accuracy&quot;</span>, cv = kfold, n_jobs=<span class="hljs-number">4</span>))<br><br><span class="hljs-comment"># cv_results 为8*10的结果矩阵</span><br>cv_means = []<br>cv_std = []<br><span class="hljs-keyword">for</span> cv_result <span class="hljs-keyword">in</span> cv_results:<br>    cv_means.append(cv_result.mean())<br>    cv_std.append(cv_result.std())<br><br>ag = [<span class="hljs-string">&quot;logreg&quot;</span>,<span class="hljs-string">&quot;SVC&quot;</span>,<span class="hljs-string">&#x27;KNN&#x27;</span>,<span class="hljs-string">&#x27;decision_tree&#x27;</span>,<span class="hljs-string">&quot;random_forest&quot;</span>,<span class="hljs-string">&quot;GBDT&quot;</span>,<span class="hljs-string">&quot;xgbGBDT&quot;</span>, <span class="hljs-string">&quot;LGB&quot;</span>]<br>cv_res = pd.DataFrame(&#123;<span class="hljs-string">&quot;CrossValMeans&quot;</span>:cv_means,<span class="hljs-string">&quot;CrossValerrors&quot;</span>: cv_std,<br>                       <span class="hljs-string">&quot;Algorithm&quot;</span>:ag&#125;)<br><br>g = sns.barplot(<span class="hljs-string">&quot;CrossValMeans&quot;</span>,<span class="hljs-string">&quot;Algorithm&quot;</span>,data = cv_res, palette=<span class="hljs-string">&quot;Blues&quot;</span>)<br>g.set_xlabel(<span class="hljs-string">&quot;CrossValMeans&quot;</span>,fontsize=<span class="hljs-number">10</span>)<br>g.set_ylabel(<span class="hljs-string">&#x27;&#x27;</span>)<br>plt.xticks(rotation=<span class="hljs-number">30</span>)<br>g = g.set_title(<span class="hljs-string">&quot;10-fold Cross validation scores&quot;</span>,fontsize=<span class="hljs-number">12</span>)<br></code></pre></td></tr></table></figure>
 
 
-<p>​<br><img src="output_71_0.png" srcset="/img/loading.gif" lazyload alt="png"><br>​    </p>
+<p><img src="/img/output_17_1.png" srcset="/img/loading.gif" lazyload></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 展示10-fold Cross validation的均值得分结果</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">8</span>):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#123;&#125; : &#123;&#125;&quot;</span>.<span class="hljs-built_in">format</span>(ag[i],cv_means[i]))<br></code></pre></td></tr></table></figure>
 
 <pre><code class="hljs">logreg : 0.8731585518102373
@@ -1121,14 +1113,14 @@ LGB : 0.8799001248439451
 
 <pre><code class="hljs">(0.8944812361959231, 0.04456088047192275)
 </code></pre>
-<p>​<br><img src="output_74_1.png" srcset="/img/loading.gif" lazyload alt="png"><br>​    </p>
-<p><img src="output_74_2.png" srcset="/img/loading.gif" lazyload alt="png"></p>
-<p><img src="output_74_3.png" srcset="/img/loading.gif" lazyload alt="png"></p>
-<p><img src="output_74_4.png" srcset="/img/loading.gif" lazyload alt="png"></p>
-<p><img src="output_74_5.png" srcset="/img/loading.gif" lazyload alt="png"></p>
-<p><img src="output_74_6.png" srcset="/img/loading.gif" lazyload alt="png"></p>
-<p><img src="output_74_7.png" srcset="/img/loading.gif" lazyload alt="png"></p>
-<p><img src="output_74_8.png" srcset="/img/loading.gif" lazyload alt="png"></p>
+<p><img src="/img/output_74_1.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/output_74_2.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/output_74_3.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/output_74_4.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/output_74_5.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/output_74_6.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/output_74_7.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/output_74_8.png" srcset="/img/loading.gif" lazyload></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> sklearn.metrics <span class="hljs-keyword">import</span> precision_score<br><br><span class="hljs-comment"># 定义集成框架</span><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bagging</span>(<span class="hljs-params"><span class="hljs-built_in">object</span></span>):</span><br>    <span class="hljs-comment"># sklearn机器学习算法的实现都属于estimators的子类：</span><br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span>(<span class="hljs-params">self,estimators</span>):</span><br>        self.estimator_names = []<br>        self.estimators = []<br>        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> estimators:<br>            self.estimator_names.append(i[<span class="hljs-number">0</span>])<br>            self.estimators.append(i[<span class="hljs-number">1</span>])<br>        self.clf = LogisticRegression()<br>    <br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fit</span>(<span class="hljs-params">self, train_x, train_y</span>):</span><br>        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> self.estimators:<br>            i.fit(train_x,train_y)<br>        x = np.array([i.predict(train_x) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> self.estimators]).T<br>        y = train_y<br>        self.clf.fit(x, y)<br>    <br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">predict</span>(<span class="hljs-params">self,x</span>):</span><br>        x = np.array([i.predict(x) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> self.estimators]).T<br>        <span class="hljs-comment">#print(x)</span><br>        <span class="hljs-keyword">return</span> self.clf.predict(x)<br>        <br>    <br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">score</span>(<span class="hljs-params">self,x,y</span>):</span><br>        s = precision_score(y,self.predict(x))<br>        <span class="hljs-comment">#print(s)</span><br>        <span class="hljs-keyword">return</span> s<br></code></pre></td></tr></table></figure>
 
 <h4 id="6-6-模型集成与验证（Bagging）"><a href="#6-6-模型集成与验证（Bagging）" class="headerlink" title="6.6 模型集成与验证（Bagging）"></a>6.6 模型集成与验证（Bagging）</h4><p>选择训练结果最好的四个基学习器进行集成（Bagging）</p>
@@ -1151,7 +1143,6 @@ LGB : 0.8799001248439451
 <li>本人知识，经验十分有限，如果有处理不当或者错误的地方还请谅解。</li>
 </ul>
 <h3 id="完结撒花"><a href="#完结撒花" class="headerlink" title="完结撒花"></a>完结撒花</h3><p>｡:.ﾟヽ(｡◕‿◕｡)ﾉﾟ.:｡+ﾟ</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><br></code></pre></td></tr></table></figure>
 
               
             </div>
@@ -1159,6 +1150,45 @@ LGB : 0.8799001248439451
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Kaggle/" class="category-chain-item">Kaggle</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Kaggle/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="category-chain-item">机器学习</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/">#集成学习</a>
+      
+        <a href="/tags/Titanic/">#Titanic</a>
+      
+        <a href="/tags/Kaggle/">#Kaggle</a>
+      
+    </div>
   
 </div>
 
@@ -1168,8 +1198,8 @@ LGB : 0.8799001248439451
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>https://e-alan.github.io/2022/11/03/kaggle%20Titanic/</div>
+      <div>kaggle Titanic问题(集成学习)</div>
+      <div>https://e-alan.github.io/2022/11/03/kaggle%20Titanic%E9%97%AE%E9%A2%98(%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0)/</div>
     </div>
     <div class="license-meta">
       
@@ -1211,12 +1241,18 @@ LGB : 0.8799001248439451
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2022/11/03/Titanic%E9%97%AE%E9%A2%98%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/" title="Titanic问题集成学习">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Titanic问题集成学习</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/11/03/Titanic%E9%97%AE%E9%A2%98%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/" title="Titanic问题集成学习">
-                        <span class="hidden-mobile">Titanic问题集成学习</span>
+                      <a href="/2022/10/18/Python%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/" title="Python计算圆周率">
+                        <span class="hidden-mobile">Python计算圆周率</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
