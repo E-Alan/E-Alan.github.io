@@ -13,9 +13,11 @@
     
     <categories>
       
+      <category>Machine Learning</category>
+      
       <category>Kaggle</category>
       
-      <category>Machine Learning</category>
+      <category>集成学习</category>
       
     </categories>
     
@@ -71,11 +73,11 @@
     
     <categories>
       
-      <category>LaTex</category>
+      <category>文档/论文写作</category>
       
       <category>论文写作</category>
       
-      <category>数模竞赛</category>
+      <category>LaTex</category>
       
     </categories>
     
@@ -104,9 +106,11 @@
     
     <categories>
       
-      <category>Markdown</category>
-      
       <category>文档/论文写作</category>
+      
+      <category>文档写作</category>
+      
+      <category>Markdown</category>
       
     </categories>
     
