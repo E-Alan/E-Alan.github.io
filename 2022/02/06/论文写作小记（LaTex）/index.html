@@ -16,16 +16,16 @@
   <meta name="author" content="Yubiao Wang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="因为参加数模美赛和国赛的缘故，接触了LaTex，本文介绍了一些常用用法，以及模板的使用。 美赛模板和国赛模板可以在https:&#x2F;&#x2F;www.latexstudio.net&#x2F; 或者 github 上下载，一般下载最新的版本，以满足组委会对格式的要求，不过每年的要求变化都不大，注意国赛Latex源文件一般需要选择Xelatex方式进行编译。">
+    <meta name="description" content="因为参加数模美赛和国赛的缘故，接触了LaTex，本文介绍了一些常用用法，以及模板的使用。 美赛模板和国赛模板可以在https:&#x2F;&#x2F;www.latexstudio.net&#x2F; 或者 github 上下载，一般下载最新的版本，以满足组委会对格式的要求，不过每年的要求变化都不大，注意国赛Latex源文件推荐选择Xelatex方式进行编译。 原因如下：  关于pdflatex 和xelatex分别是什么pd">
 <meta property="og:type" content="article">
 <meta property="og:title" content="论文写作小记（LaTex）">
 <meta property="og:url" content="https://e-alan.github.io/2022/02/06/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%B0%8F%E8%AE%B0%EF%BC%88LaTex%EF%BC%89/index.html">
 <meta property="og:site_name" content="Blog of Alan">
-<meta property="og:description" content="因为参加数模美赛和国赛的缘故，接触了LaTex，本文介绍了一些常用用法，以及模板的使用。 美赛模板和国赛模板可以在https:&#x2F;&#x2F;www.latexstudio.net&#x2F; 或者 github 上下载，一般下载最新的版本，以满足组委会对格式的要求，不过每年的要求变化都不大，注意国赛Latex源文件一般需要选择Xelatex方式进行编译。">
+<meta property="og:description" content="因为参加数模美赛和国赛的缘故，接触了LaTex，本文介绍了一些常用用法，以及模板的使用。 美赛模板和国赛模板可以在https:&#x2F;&#x2F;www.latexstudio.net&#x2F; 或者 github 上下载，一般下载最新的版本，以满足组委会对格式的要求，不过每年的要求变化都不大，注意国赛Latex源文件推荐选择Xelatex方式进行编译。 原因如下：  关于pdflatex 和xelatex分别是什么pd">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://e-alan.github.io/img/latex.jpg">
 <meta property="article:published_time" content="2022-02-06T13:35:24.000Z">
-<meta property="article:modified_time" content="2022-11-04T07:58:03.124Z">
+<meta property="article:modified_time" content="2023-02-04T13:12:51.545Z">
 <meta property="article:author" content="Yubiao Wang">
 <meta property="article:tag" content="LaTex">
 <meta property="article:tag" content="论文写作">
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.6k 字
+          6.8k 字
         
       </span>
     
@@ -237,7 +237,7 @@
         
         
         
-          31 分钟
+          57 分钟
         
       </span>
     
@@ -280,7 +280,19 @@
             <div class="markdown-body">
               
               <p>因为参加数模美赛和国赛的缘故，接触了<strong>LaTex</strong>，本文介绍了一些常用用法，以及模板的使用。</p>
-<p>美赛模板和国赛模板可以在<a target="_blank" rel="noopener" href="https://www.latexstudio.net/">https://www.latexstudio.net/</a> 或者 <strong>github</strong> 上下载，一般下载最新的版本，以满足组委会对格式的要求，不过每年的要求变化都不大，注意国赛Latex源文件一般需要选择<strong>Xelatex</strong>方式进行编译。</p>
+<p>美赛模板和国赛模板可以在<a target="_blank" rel="noopener" href="https://www.latexstudio.net/">https://www.latexstudio.net/</a> 或者 <strong>github</strong> 上下载，一般下载最新的版本，以满足组委会对格式的要求，不过每年的要求变化都不大，注意国赛Latex源文件推荐选择<strong>Xelatex</strong>方式进行编译。</p>
+<p><strong>原因如下：</strong></p>
+<ul>
+<li><p><strong>关于pdflatex</strong> 和<strong>xelatex</strong>分别是什么<br>pdflatex 和xelatex是latex编译中最常用的编译方式，而且效果一般都是比较好的。</p>
+</li>
+<li><p>PDFLaTeX命令：PDFTeX程序中的命令，用来编译用LaTeX格式写的tex文件。一般来说，pdflatex相对来说老一些，对于系统内的一些字体支持的不是很好，但是作为一个重要的编译方式，所支持的宏包也更多，一些很老的宏包需要pdf才能编译，这也是一个显著的优点。</p>
+</li>
+<li><p>XeLaTeX命令：XeTeX程序中的命令，用来编译用LaTeX格式写的tex文件。<br>这个相对来说新一些，对于中文字体支持的更好一些，一般来说当编写中文文档的时候，更适合使用xelatex进行编译。</p>
+</li>
+</ul>
+<h3 id="latex-中的长度单位，尺寸"><a href="#latex-中的长度单位，尺寸" class="headerlink" title="latex 中的长度单位，尺寸:"></a>latex 中的长度单位，尺寸:</h3><p>使用latex时，经常需要调整间距，不同的长度单位容易使人迷惑混淆，我结合相关资料，整理一下，同时方便查阅。latex中的通用长度单位如下：</p>
+<p><img src="/img/latex_long.png" srcset="/img/loading.gif" lazyload></p>
+<p><strong>对水平距离的设置常用 em ，而对垂直距离的设置，如行距，常用 ex。</strong></p>
 <span id="more"></span>
 
 <h1 id="论文写作小记（LaTex）"><a href="#论文写作小记（LaTex）" class="headerlink" title="论文写作小记（LaTex）"></a>论文写作小记（LaTex）</h1><p>下面这张图直观地描述了latex是什么(๑•̀ㅂ•́) ✧</p>
@@ -298,12 +310,17 @@
 </li>
 <li><p>等宽字体 \texttt{…} : 例如M2的处理</p>
 </li>
+<li><p>呵呵，强调 \emph{}：这个命令的意思是强调，不是变斜体。比如一段英文文字是roman体，中间使用\emph指令就会用斜体来强调，如果这段文字本来就是斜体，再强调的话应该就是roman体。对于中文来说，可能会在宋体中用楷体表示强调～</p>
+</li>
 </ul>
 <h2 id="02-间距调节"><a href="#02-间距调节" class="headerlink" title="02.间距调节"></a>02.间距调节</h2><ul>
 <li><p>强制换行：可使用\\或 \linebreak, </p>
 <p>如果在单词中间，我们不希望换行可以使用˜连接，即不会断行的空格。</p>
 </li>
 <li><p>强制分页：可用 \newpage, \clearpage 或 \pagebreak</p>
+<ul>
+<li>推荐\clearpage，当你新加的一页内容较多时，两者基本一样，当新加的一页内容较少时，“\newpage”就无法实现你想要的效果，但“\clearpage”可以。</li>
+</ul>
 </li>
 <li><p>空格：(数值与单位之间没有空格)</p>
 <ul>
@@ -313,7 +330,7 @@
 <li>,：大约为 \quad 的 3/18</li>
 </ul>
 </li>
-<li><p>垂直间距：\vspace{高度}：产生指定高度的垂直空白，如 \vspace{4pt}</p>
+<li><p>垂直间距：\vspace{高度}：产生指定高度的垂直空白，如 \vspace{4pt}，可正可负（间距增加或者减小）。</p>
 </li>
 </ul>
 <h2 id="03-列表使用"><a href="#03-列表使用" class="headerlink" title="03.列表使用"></a>03.列表使用</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs latex">无序列表<br>\begin&#123;itemize&#125;<br>　　\item 标签 条目内容<br>\end&#123;itemize&#125;<br>有序列表<br>\begin&#123;enumerate&#125;[可选格式]<br>　　\item 标签 条目内容<br>\end&#123;enumerate&#125;<br>eg.<br>\begin&#123;enumerate&#125;[\bfseries \textit&#123;Step&#125; 1:]<br>	\item AAA<br>	\item BBB<br>	\item CCC<br>\end&#123;enumerate&#125;<br></code></pre></td></tr></table></figure>
@@ -355,6 +372,11 @@
 </li>
 </ul>
 <h2 id="05-公式微调"><a href="#05-公式微调" class="headerlink" title="05.公式微调"></a>05.公式微调</h2><ul>
+<li><p>间距微调<br>  文档前添加代码：</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs latex">\newenvironment&#123;shrinkeq&#125;[1]%缩短公式之间的距离<br>&#123; \bgroup<br>  \addtolength\abovedisplayshortskip&#123;#1&#125;<br>  \addtolength\abovedisplayskip&#123;#1&#125;<br>  \addtolength\belowdisplayshortskip&#123;#1&#125;<br>  \addtolength\belowdisplayskip&#123;#1&#125;&#125;<br>&#123;\egroup\ignorespacesafterend&#125;<br>————————————————<br>版权声明：本文为CSDN博主「Leafnode」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：https://blog.csdn.net/rt5rte54654/article/details/37534103<br></code></pre></td></tr></table></figure>
+<p>  然后这样编辑公式</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs latex">\begin&#123;shrinkeq&#125;&#123;-1.5ex&#125;<br>\begin&#123;equation&#125;<br>	\varDelta t=t_j-t_i<br>\end&#123;equation&#125;<br>\end&#123;shrinkeq&#125; <br></code></pre></td></tr></table></figure>
+</li>
 <li><p>在行内公式中，巨算符 (∑, ∏, ∫ ) 的上下标往往会被放置到右侧，同时分数（fraction）也会变小</p>
 <ul>
 <li><p>利用巨算符、分数本身的缩放 (优雅)</p>
@@ -441,11 +463,31 @@
 </li>
 <li><p>而纵向合并单元格则需要用到 multirow 宏包，然后采用 \multirow{列数}{宽度}{内容}。这两个语句仅在第二个命令有所区别。在\multirow中的宽度可以填*以使用自然宽度。</p>
 </li>
+</ul>
+</li>
 <li><p>在普通表格中一般采用\cline{i-j}实现，而在三线表中则利用\cmidrule{i-j}实现</p>
 </li>
-</ul>
+<li><p>带注释的表格</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs latex">\begin&#123;table&#125;[htbp]<br>  \centering<br>  \caption&#123;铅钡玻璃部分风化检测点预测结果&#125;<br>\begin&#123;threeparttable&#125;<br>    \begin&#123;tabular&#125;&#123;ccccccccc&#125;<br>    \toprule[1.5pt]<br>    \rowcolor[rgb]&#123; .949,  .949,  .949&#125;\textbf&#123;采样点&#125; &amp; \multicolumn&#123;1&#125;&#123;p&#123;3.11em&#125;&#125;&#123;\textbf&#123;二氧化硅&#125;&#125; &amp; \multicolumn&#123;1&#125;&#123;p&#123;3.445em&#125;&#125;&#123;\textbf&#123;氧化钠&#125;&#125; &amp; \multicolumn&#123;1&#125;&#123;p&#123;3.61em&#125;&#125;&#123;\textbf&#123;氧化铝&#125;&#125; &amp; \multicolumn&#123;1&#125;&#123;p&#123;3.445em&#125;&#125;&#123;\textbf&#123;氧化铜&#125;&#125; &amp; \multicolumn&#123;1&#125;&#123;p&#123;3.39em&#125;&#125;&#123;\textbf&#123;氧化铅&#125;&#125; &amp; \multicolumn&#123;1&#125;&#123;p&#123;3.28em&#125;&#125;&#123;\textbf&#123;氧化钡&#125;&#125; &amp; \multicolumn&#123;1&#125;&#123;p&#123;2.945em&#125;&#125;&#123;\textbf&#123;其他&#125;&#125; &amp; \textbf&#123;总和&#125; \\<br>    \midrule[1pt]<br>    02    &amp; 64.53 &amp; 0.73  &amp; 7.55  &amp; 0.02  &amp; 23.82 &amp; 2.02  &amp; 6.33  &amp; 105.00  \\<br>    08    &amp; 49.34 &amp; 0.76  &amp; 2.44  &amp; 7.11  &amp; 12.26 &amp; 20.34 &amp; 1.49  &amp; 93.73  \\<br>    08严重  &amp; 34.58 &amp; 0.82  &amp; 2.32  &amp; 2.20  &amp; 15.97 &amp; 21.58 &amp; 7.52  &amp; 85.00  \\<br>    11    &amp; 64.34 &amp; 0.76  &amp; 4.11  &amp; 3.29  &amp; 10.05 &amp; 10.64 &amp; 6.05  &amp; 99.23  \\<br>    19    &amp; 59.93 &amp; 0.76  &amp; 5.20  &amp; 2.29  &amp; 21.75 &amp; 5.23  &amp; 6.73  &amp; 101.90  \\<br>    \bottomrule[1.5pt]<br>    \end&#123;tabular&#125;%<br>\begin&#123;tablenotes&#125;<br>\item[1] 仅展示前5条预测数据，含量较少成分归于其他，完整数据见支撑材料 附件1文件q1预测风化前.xlsx<br>\end&#123;tablenotes&#125;<br>\end&#123;threeparttable&#125;<br>  \label&#123;tab:yc&#125;%<br>\end&#123;table&#125;%<br></code></pre></td></tr></table></figure>
+
 <h2 id="07-模板的修改"><a href="#07-模板的修改" class="headerlink" title="07.模板的修改"></a>07.模板的修改</h2><p>​    在XXX.cls源文件中进行模板样式的修改，一般不建议进行大的改动，遇到特殊困难可以查资料或者尝试寻找模板作者解决。</p>
-</li>
+<h2 id="08-一些分节符"><a href="#08-一些分节符" class="headerlink" title="08.一些分节符"></a>08.一些分节符</h2><p>黑色实心三角：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs latex">\noindent$\blacktriangleright\ $\textbf&#123;\large&#123;Establishment of Musical Influence Network&#125;&#125;<br></code></pre></td></tr></table></figure>
+
+<p>双色箭头：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs latex">\adfhalfrightarrowhead \textbf&#123;Genre Dimension:&#125;<br></code></pre></td></tr></table></figure>
+
+<p>Step X:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs latex">\textbf&#123;\emph&#123;Step 1&#125;: Calculating Degree Centrality&#125;<br></code></pre></td></tr></table></figure>
+
+<p>半括号：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs latex">\textbf&#123;2）铅钡玻璃的亚分类&#125;<br></code></pre></td></tr></table></figure>
+
+<p>圈n:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs latex">\textbf&#123;\textcircled&#123;1&#125;&#125;<br></code></pre></td></tr></table></figure>
+
+<p>大黑点：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs latex">●\textbf&#123;高钾玻璃&#125;<br></code></pre></td></tr></table></figure></li>
 </ul>
 
               
