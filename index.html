@@ -27,6 +27,7 @@
 <meta name="twitter:card" content="summary_large_image">
   
   
+  
   <title>Blog of Alan</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
@@ -58,10 +59,46 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"e-alan.github.io","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":"ture","baidu":"66fe493fc83f85768cab806da37aa086","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"3HI8ltHUAgcuyEezN3uHxMVi-gzGzoHsz","app_key":"NVy1rcbT5pmhJAfNq0dYvwc7","server_url":"https://3hi8lthu.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":"ture"}},"search_path":"/local-search.xml"};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"e-alan.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":"ture","follow_dnt":true,"baidu":"66fe493fc83f85768cab806da37aa086","google":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"3HI8ltHUAgcuyEezN3uHxMVi-gzGzoHsz","app_key":"NVy1rcbT5pmhJAfNq0dYvwc7","server_url":"https://3hi8lthu.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":"ture"},"gtag":null},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
+  
+
+  
+    <!-- Baidu Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?66fe493fc83f85768cab806da37aa086";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
 
   
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -95,9 +132,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
-                首页
+                <span>首页</span>
               </a>
             </li>
           
@@ -107,9 +144,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/">
+              <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
-                归档
+                <span>归档</span>
               </a>
             </li>
           
@@ -119,9 +156,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/">
+              <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
-                分类
+                <span>分类</span>
               </a>
             </li>
           
@@ -131,9 +168,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/">
+              <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
-                标签
+                <span>标签</span>
               </a>
             </li>
           
@@ -143,9 +180,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
-                关于
+                <span>关于</span>
               </a>
             </li>
           
@@ -155,9 +192,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/links/">
+              <a class="nav-link" href="/links/" target="_self">
                 <i class="iconfont icon-link-fill"></i>
-                友链
+                <span>友链</span>
               </a>
             </li>
           
@@ -165,15 +202,16 @@
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+              <i class="iconfont icon-search"></i>
             </a>
           </li>
           
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
@@ -232,16 +270,16 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2023/05/28/To%20make%20each%20day%20count/" target="_self">
           To make each day count
         </a>
-      </h1>
+      </h2>
 
-      <a class="index-excerpt" href="/2023/05/28/To%20make%20each%20day%20count/" target="_self">
+      
+      <a class="index-excerpt " href="/2023/05/28/To%20make%20each%20day%20count/" target="_self">
         <div>
-          
           风停了，雨走了，太阳就回来了；乌云笼罩的日子里，也要好好的₍ᐢ..ᐢ₎♡——希望带给屏幕前的每一个你一丝暖意₍ᐢ.ˬ.⑅ᐢ₎，哪怕微乎其微，也无妨  此文永存
         </div>
       </a>
@@ -299,17 +337,17 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2023/03/23/AI%E5%AE%9E%E8%B7%B5-Zebra-Problem/" target="_self">
           AI实践-Zebra Problem
         </a>
-      </h1>
+      </h2>
 
-      <a class="index-excerpt" href="/2023/03/23/AI%E5%AE%9E%E8%B7%B5-Zebra-Problem/" target="_self">
+      
+      <a class="index-excerpt " href="/2023/03/23/AI%E5%AE%9E%E8%B7%B5-Zebra-Problem/" target="_self">
         <div>
-          
-          Kanrenkanren是一个Python中的逻辑编程库，用于自动化推理和约束求解。它允许用户使用关系和规则来表示问题，并使用不同的搜索算法来查找满足约束条件的解决方案。 1from kanren import run, eq, membero, var, conde   12x &#x3D; var()run(1,x, eq(x,5))     (5,)  具体解释如下：  var()函数创建一个新的逻辑
+          Kanrenkanren是一个Python中的逻辑编程库，用于自动化推理和约束求解。它允许用户使用关系和规则来表示问题，并使用不同的搜索算法来查找满足约束条件的解决方案。 1from kanren import run, eq, membero, var, conde   12x = var()run(1,x, eq(x,5))     (5,)  具体解释如下：  var()函数创建一个新的逻辑
         </div>
       </a>
 
@@ -377,16 +415,16 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2023/02/04/%E5%9F%BA%E4%BA%8EML%E7%9A%84%E7%BA%A2%E6%A5%BC%E6%A2%A6%E4%BD%9C%E8%80%85%E5%88%86%E6%9E%90/" target="_self">
           基于ML的红楼梦作者分析
         </a>
-      </h1>
+      </h2>
 
-      <a class="index-excerpt" href="/2023/02/04/%E5%9F%BA%E4%BA%8EML%E7%9A%84%E7%BA%A2%E6%A5%BC%E6%A2%A6%E4%BD%9C%E8%80%85%E5%88%86%E6%9E%90/" target="_self">
+      
+      <a class="index-excerpt " href="/2023/02/04/%E5%9F%BA%E4%BA%8EML%E7%9A%84%E7%BA%A2%E6%A5%BC%E6%A2%A6%E4%BD%9C%E8%80%85%E5%88%86%E6%9E%90/" target="_self">
         <div>
-          
           《红楼梦》，原名《石头记》，中国古代章回体长篇小说，中国古典四大名著之一。其通行本共120回，一般认为前80回是清代作家曹雪芹所著，后40回作者为无名氏，整理者为程伟元、高鹗。《红楼梦》百度百科 我们基于聚类方法（K-means）无监督学习和Naive Bayes监督学习方法进行有关章节作者的探索。 1234567import numpy as npimport pandas as pdfrom
         </div>
       </a>
@@ -453,17 +491,17 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2022/11/24/%E5%A4%A9%E7%8C%AB%E5%A4%8D%E8%B4%AD%E9%A2%84%E6%B5%8B(%E5%A4%A9%E6%B1%A0)/" target="_self">
           天猫复购预测(天池)
         </a>
-      </h1>
+      </h2>
 
-      <a class="index-excerpt" href="/2022/11/24/%E5%A4%A9%E7%8C%AB%E5%A4%8D%E8%B4%AD%E9%A2%84%E6%B5%8B(%E5%A4%A9%E6%B1%A0)/" target="_self">
+      
+      <a class="index-excerpt " href="/2022/11/24/%E5%A4%A9%E7%8C%AB%E5%A4%8D%E8%B4%AD%E9%A2%84%E6%B5%8B(%E5%A4%A9%E6%B1%A0)/" target="_self">
         <div>
-          
-          题目描述：阿里云天池官网，天猫复购预测之挑战Baseline：https:&#x2F;&#x2F;tianchi.aliyun.com&#x2F;competition&#x2F;entrance&#x2F;231576&#x2F;rankingList（官方给出的模型评价指标基于roc_auc_score，天池官方Baseline解决方案得分为0.704954） 1.任务描述：双十一活动通常可以为商家带来很多新客户，但其中只有一小部分会成为其忠实客户。对
+          题目描述：阿里云天池官网，天猫复购预测之挑战Baseline：https://tianchi.aliyun.com/competition/entrance/231576/rankingList（官方给出的模型评价指标基于roc_auc_score，天池官方Baseline解决方案得分为0.704954） 1.任务描述：双十一活动通常可以为商家带来很多新客户，但其中只有一小部分会成为其忠实客户。对
         </div>
       </a>
 
@@ -538,16 +576,16 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2022/11/03/kaggle%20Titanic%E9%97%AE%E9%A2%98(%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0)/" target="_self">
           kaggle Titanic问题(集成学习)
         </a>
-      </h1>
+      </h2>
 
-      <a class="index-excerpt" href="/2022/11/03/kaggle%20Titanic%E9%97%AE%E9%A2%98(%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0)/" target="_self">
+      
+      <a class="index-excerpt " href="/2022/11/03/kaggle%20Titanic%E9%97%AE%E9%A2%98(%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0)/" target="_self">
         <div>
-          
           Titanic 生存率预测一、问题描述泰坦尼克号（Titanic）问题的背景就是那个大家都熟悉的『Jack and Rose』的故事，豪华游艇倒了，大家都惊恐逃生，可是救生艇的数量有限，无法人人都有，副船长发话了『lady and kid first！』，所以是否获救其实并非随机，而是基于一些背景而有rank先后的。训练和测试数据是一些乘客的个人信息以及存活状况，要尝试根据它生成合适的模型并预测其
         </div>
       </a>
@@ -625,17 +663,17 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2022/10/18/Python%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/" target="_self">
           Python计算圆周率
         </a>
-      </h1>
+      </h2>
 
-      <a class="index-excerpt" href="/2022/10/18/Python%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/" target="_self">
+      
+      <a class="index-excerpt " href="/2022/10/18/Python%E8%AE%A1%E7%AE%97%E5%9C%86%E5%91%A8%E7%8E%87/" target="_self">
         <div>
-          
-          第一次python上机课，老师找了一个知乎上的问题：“ 圆周率pi比较著名的无穷级数公式有哪些？”好家伙，原来前人研究了这么多使用级数计算圆周率的方法，五种方案的详细叙述在https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;402311979 方案一：1234567891011121314151617181920212223242526272829%matplotlib inlineim
+          第一次python上机课，老师找了一个知乎上的问题：“ 圆周率pi比较著名的无穷级数公式有哪些？”好家伙，原来前人研究了这么多使用级数计算圆周率的方法，五种方案的详细叙述在https://www.zhihu.com/question/402311979 方案一：1234567891011121314151617181920212223242526272829%matplotlib inlineim
         </div>
       </a>
 
@@ -692,17 +730,17 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2022/02/06/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%B0%8F%E8%AE%B0%EF%BC%88LaTex%EF%BC%89/" target="_self">
           论文写作小记（LaTex）
         </a>
-      </h1>
+      </h2>
 
-      <a class="index-excerpt" href="/2022/02/06/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%B0%8F%E8%AE%B0%EF%BC%88LaTex%EF%BC%89/" target="_self">
+      
+      <a class="index-excerpt " href="/2022/02/06/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%B0%8F%E8%AE%B0%EF%BC%88LaTex%EF%BC%89/" target="_self">
         <div>
-          
-          因为参加数模美赛和国赛的缘故，接触了LaTex，本文介绍了一些常用用法，以及模板的使用。 美赛模板和国赛模板可以在https:&#x2F;&#x2F;www.latexstudio.net&#x2F; 或者 github 上下载，一般下载最新的版本，以满足组委会对格式的要求，不过每年的要求变化都不大，注意国赛Latex源文件推荐选择Xelatex方式进行编译。 原因如下：  关于pdflatex 和xelatex分别是什么pd
+          因为参加数模美赛和国赛的缘故，接触了LaTex，本文介绍了一些常用用法，以及模板的使用。 美赛模板和国赛模板可以在https://www.latexstudio.net/ 或者 github 上下载，一般下载最新的版本，以满足组委会对格式的要求，不过每年的要求变化都不大，注意国赛Latex源文件推荐选择Xelatex方式进行编译。 原因如下：  关于pdflatex 和xelatex分别是什么pd
         </div>
       </a>
 
@@ -777,16 +815,16 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2021/10/03/%E4%BD%BF%E7%94%A8Markdown%E5%86%99%E6%96%87%E6%A1%A3/" target="_self">
           使用Markdown写文档
         </a>
-      </h1>
+      </h2>
 
-      <a class="index-excerpt" href="/2021/10/03/%E4%BD%BF%E7%94%A8Markdown%E5%86%99%E6%96%87%E6%A1%A3/" target="_self">
+      
+      <a class="index-excerpt " href="/2021/10/03/%E4%BD%BF%E7%94%A8Markdown%E5%86%99%E6%96%87%E6%A1%A3/" target="_self">
         <div>
-          
           常用操作[toc] 标题：1-6级 快捷方式：Ctrl+1-6   转义字符：#的数量表示级数  注意#和文本有个空格 四个#号控制的标题-四级标题  #### 四级标题  序列： 快捷方式  有序列表 Ctrl+shift+[ 无序列表 Ctrl+shift+]   转义字符有序列表  在空白的一行输入 1.空格 即可实现缩进排序的效果无序列表  在空白的一行输入 -空格    空格可以理解为转
         </div>
       </a>
@@ -972,45 +1010,15 @@
 
 
   
-    <!-- Baidu Analytics -->
-    <script defer>
-      var _hmt = _hmt || [];
-      (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?66fe493fc83f85768cab806da37aa086";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-  
-
-
-
-
-  
     <script  src="/js/img-lazyload.js" ></script>
   
 
 
 
 
-  <script  src="/js/local-search.js" ></script>
-
   <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
 
 
 

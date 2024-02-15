@@ -27,6 +27,7 @@
 <meta name="twitter:card" content="summary_large_image">
   
   
+  
   <title>分类 - Blog of Alan</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
@@ -58,10 +59,46 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"e-alan.github.io","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":"ture","baidu":"66fe493fc83f85768cab806da37aa086","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"3HI8ltHUAgcuyEezN3uHxMVi-gzGzoHsz","app_key":"NVy1rcbT5pmhJAfNq0dYvwc7","server_url":"https://3hi8lthu.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":"ture"}},"search_path":"/local-search.xml"};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"e-alan.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":"ture","follow_dnt":true,"baidu":"66fe493fc83f85768cab806da37aa086","google":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"3HI8ltHUAgcuyEezN3uHxMVi-gzGzoHsz","app_key":"NVy1rcbT5pmhJAfNq0dYvwc7","server_url":"https://3hi8lthu.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":"ture"},"gtag":null},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
+  
+
+  
+    <!-- Baidu Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?66fe493fc83f85768cab806da37aa086";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
 
   
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -95,9 +132,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
-                首页
+                <span>首页</span>
               </a>
             </li>
           
@@ -107,9 +144,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/">
+              <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
-                归档
+                <span>归档</span>
               </a>
             </li>
           
@@ -119,9 +156,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/">
+              <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
-                分类
+                <span>分类</span>
               </a>
             </li>
           
@@ -131,9 +168,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/">
+              <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
-                标签
+                <span>标签</span>
               </a>
             </li>
           
@@ -143,9 +180,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
-                关于
+                <span>关于</span>
               </a>
             </li>
           
@@ -155,9 +192,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/links/">
+              <a class="nav-link" href="/links/" target="_self">
                 <i class="iconfont icon-link-fill"></i>
-                友链
+                <span>友链</span>
               </a>
             </li>
           
@@ -165,15 +202,16 @@
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+              <i class="iconfont icon-search"></i>
             </a>
           </li>
           
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
@@ -224,7 +262,6 @@
 <div class="category-list">
   
   
-  
     
     
     
@@ -256,14 +293,12 @@
   </div>
 
           
-          
-  
   
     
     
     
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
           list-group-item category-item-action col-10 col-md-11 col-xm-11" title="论文写作"
         id="heading-4f70c9f305ba97c50dbca8c25c8747d7" role="tab" data-toggle="collapse" href="#collapse-4f70c9f305ba97c50dbca8c25c8747d7"
         aria-expanded="false"
@@ -290,14 +325,12 @@
   </div>
 
           
-          
-  
   
     
     
     
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
           list-group-item category-item-action col-10 col-md-11 col-xm-11" title="LaTex"
         id="heading-7c2c714003d57577afe788b89364e741" role="tab" data-toggle="collapse" href="#collapse-7c2c714003d57577afe788b89364e741"
         aria-expanded="false"
@@ -342,8 +375,8 @@
     
     
     
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
           list-group-item category-item-action col-10 col-md-11 col-xm-11" title="文档写作"
         id="heading-65fa3a78900807610f13e6152ef99e49" role="tab" data-toggle="collapse" href="#collapse-65fa3a78900807610f13e6152ef99e49"
         aria-expanded="false"
@@ -370,14 +403,12 @@
   </div>
 
           
-          
-  
   
     
     
     
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
           list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Markdown"
         id="heading-2182a74bab7188d959e795d9301e87ff" role="tab" data-toggle="collapse" href="#collapse-2182a74bab7188d959e795d9301e87ff"
         aria-expanded="false"
@@ -454,14 +485,12 @@
   </div>
 
           
-          
-  
   
     
     
     
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
           list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Kaggle"
         id="heading-8fec9765921cfa63cb331e42a924c27c" role="tab" data-toggle="collapse" href="#collapse-8fec9765921cfa63cb331e42a924c27c"
         aria-expanded="false"
@@ -488,14 +517,12 @@
   </div>
 
           
-          
-  
   
     
     
     
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
           list-group-item category-item-action col-10 col-md-11 col-xm-11" title="集成学习"
         id="heading-01892029e6c177813c2333126d1421a3" role="tab" data-toggle="collapse" href="#collapse-01892029e6c177813c2333126d1421a3"
         aria-expanded="false"
@@ -540,8 +567,8 @@
     
     
     
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
           list-group-item category-item-action col-10 col-md-11 col-xm-11" title="天池"
         id="heading-2b5107cccc0810888a1229482b332c15" role="tab" data-toggle="collapse" href="#collapse-2b5107cccc0810888a1229482b332c15"
         aria-expanded="false"
@@ -568,14 +595,12 @@
   </div>
 
           
-          
-  
   
     
     
     
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
           list-group-item category-item-action col-10 col-md-11 col-xm-11" title="集成学习"
         id="heading-01892029e6c177813c2333126d1421a3" role="tab" data-toggle="collapse" href="#collapse-01892029e6c177813c2333126d1421a3"
         aria-expanded="false"
@@ -694,14 +719,12 @@
   </div>
 
           
-          
-  
   
     
     
     
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
           list-group-item category-item-action col-10 col-md-11 col-xm-11" title="ML"
         id="heading-d01fd9b01e9dde8bd3dc247afbfb7218" role="tab" data-toggle="collapse" href="#collapse-d01fd9b01e9dde8bd3dc247afbfb7218"
         aria-expanded="false"
@@ -774,14 +797,12 @@
   </div>
 
           
-          
-  
   
     
     
     
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
+    <div class="category-sub row nomargin-x">
+      <a class="category-subitem collapsed
           list-group-item category-item-action col-10 col-md-11 col-xm-11" title="逻辑推理"
         id="heading-a579ef176723487cac10c201ae806b25" role="tab" data-toggle="collapse" href="#collapse-a579ef176723487cac10c201ae806b25"
         aria-expanded="false"
@@ -986,45 +1007,15 @@
 
 
   
-    <!-- Baidu Analytics -->
-    <script defer>
-      var _hmt = _hmt || [];
-      (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?66fe493fc83f85768cab806da37aa086";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-  
-
-
-
-
-  
     <script  src="/js/img-lazyload.js" ></script>
   
 
 
 
 
-  <script  src="/js/local-search.js" ></script>
-
   <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
 
 
 
